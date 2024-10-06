@@ -1,0 +1,17 @@
+starter\checkout\DoCheckout.class
+starter\search\SearchFor.class
+starter\cart\CartPage.class
+starter\cart\ProductPage.class
+starter\stepdefinitions\LoginStepDefinitions.class
+starter\checkout\CompletePurchase.class
+starter\navigation\NavigateTo.class
+starter\search\SearchResultList.class
+starter\checkout\CheckoutPage.class
+starter\cart\ViewCart.class
+starter\login\LoginForm.class
+starter\cart\AddToCart.class
+starter\CucumberTestSuite.class
+starter\navigation\SauceDemoHomePage.class
+starter\search\SearchResult.class
+starter\search\SearchForm.class
+starter\login\DoLogin.class
