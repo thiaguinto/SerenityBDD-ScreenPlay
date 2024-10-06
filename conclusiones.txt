@@ -1,0 +1,30 @@
+# Conclusiones del Ejercicio de Pruebas Automatizadas con SerenityBDD y Screenplay
+
+## 1. Cobertura de Pruebas:
+Se implementaron pruebas E2E que cubren el flujo completo de compra en la página `https://www.saucedemo.com/`. Las pruebas incluyen los siguientes pasos:
+- Autenticación del usuario.
+- Agregar dos productos al carrito.
+- Verificar el carrito.
+- Completar la compra con detalles del cliente.
+- Confirmar la finalización exitosa de la compra.
+
+## 2. Uso de SerenityBDD y Screenplay:
+La integración de SerenityBDD con el patrón Screenplay resultó en una estructura modular y fácilmente escalable para las pruebas. La separación clara entre actores, tareas e interacciones mejora la mantenibilidad del código y facilita la adición de nuevos escenarios.
+
+### Ventajas observadas:
+- **Modularidad**: La reutilización de tareas como `AddToCart` y `ViewCart` permite mantener el código limpio y DRY (Don't Repeat Yourself).
+- **Reportes Detallados**: Los reportes de SerenityBDD proporcionan un análisis claro y visual de los resultados de las pruebas, permitiendo identificar fácilmente cualquier fallo en el flujo de pruebas.
+- **Uso de Cucumber**: La definición de los escenarios en Gherkin facilita la comprensión de las pruebas para cualquier miembro del equipo, incluso aquellos sin experiencia en desarrollo.
+
+## 3. Hallazgos:
+Durante el proceso de pruebas se observaron los siguientes puntos clave:
+- **Tiempo de respuesta**: Las pruebas ejecutadas tuvieron un buen rendimiento, pero se podrían optimizar en el futuro mediante la configuración de paralelización en Maven y en el plugin de SerenityBDD.
+- **Resiliencia**: La estructura de Screenplay permite manejar errores de manera eficiente. Sin embargo, se podrían mejorar las validaciones en caso de errores en la autenticación o problemas de red.
+
+## 4. Retos:
+- **Manejo de datos dinámicos**: Una posible mejora futura es integrar un sistema de datos más dinámico (por ejemplo, con una base de datos o un archivo externo de configuraciones) para gestionar diferentes usuarios y productos de prueba.
+- **Ampliación del scope**: Actualmente, las pruebas están enfocadas en un flujo exitoso de compra. Sería ideal agregar pruebas para flujos de errores, como fallos en la autenticación, carritos vacíos, y manejo de productos no disponibles.
+
+## 5. Conclusión General:
+El ejercicio demostró la capacidad de SerenityBDD con Screenplay para crear pruebas E2E robustas, modulares y fáciles de mantener. Los reportes detallados y la claridad de los escenarios hacen que esta solución sea óptima para proyectos donde la calidad y visibilidad de las pruebas son esenciales. Además, la escalabilidad del patrón Screenplay permitirá a futuro agregar más escenarios y casos de uso sin comprometer la estructura del código.
+
